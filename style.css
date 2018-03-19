@@ -1,0 +1,43 @@
+.page > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+    font-size: 30px;
+}
+
+
+.page {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "head head" "nav  main" "nav  foot";
+    
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 50px 300px 100px;
+
+}
+
+
+    
+
+    .header {
+        grid-area: head;
+        background-color: #8ca0ff;
+    }
+
+    .navigation {
+        grid-area: nav;
+        background-color: #ffa08c;
+    }
+
+    .main-area {
+    grid-area: main;
+    background-color: #ffff64;
+}
+
+.footer {
+    grid-area: foot;
+    background-color: #8cffa0;
+}
+
+
