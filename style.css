@@ -11,33 +11,71 @@
     display: grid;
     width: 100%;
     grid-template-areas: "head head" "nav  main" "nav  foot";
-    
     grid-template-columns: 150px 1fr;
     grid-template-rows: 50px 300px 100px;
-
 }
 
+.header {
+    grid-area: head;
+    background-color: #8ca0ff;
+}
 
-    
+.navigation {
+    grid-area: nav;
+    background-color: #ffa08c;
+}
 
-    .header {
-        grid-area: head;
-        background-color: #8ca0ff;
-    }
-
-    .navigation {
-        grid-area: nav;
-        background-color: #ffa08c;
-    }
-
-    .main-area {
+.main-area {
     grid-area: main;
     background-color: #ffff64;
 }
+
+
 
 .footer {
     grid-area: foot;
     background-color: #8cffa0;
 }
+
+@media screen and (max-width: 720px) {
+    .page {
+        display: grid;
+        width: 100%;
+        grid-template-areas: "head" "main" "foot";
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 300px 100px;
+    }
+  
+}
+
+
+/*@media only screen and (min-width:960px) {
+    
+}
+
+@media only screen and (min-width:1440px) {
+  
+}
+
+@media only screen and (min-width:2000px) {
+   
+}
+
+@media only screen and (max-device-width:480px) {
+   
+}
+
+@media only screen and (device-width:768px) {
+   
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+   
+}*/
+
 
 
