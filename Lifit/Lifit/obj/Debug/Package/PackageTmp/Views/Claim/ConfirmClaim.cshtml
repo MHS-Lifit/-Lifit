@@ -1,0 +1,120 @@
+﻿@model AirHelp.DAL.Claim
+
+<div class="register-form">
+    <div class="progress">
+        <div class="past">
+            <div class="circle"><label>1</label></div>
+            <label class="text">Данни за полета</label>
+        </div>
+        <div class="past">
+            <div class="circle"><label>2</label></div>
+            <label class="text">Описание на проблема</label>
+        </div>
+        <div class="past">
+            <div class="circle"><label>3</label></div>
+            <label class="text">Регистрация</label>
+        </div>
+        <div class="current">
+            <div class="circle"><label>4</label></div>
+            <label class="text">Подаване на иск</label>
+        </div>
+
+    </div>
+    <div class="center-content">
+        <form method="post" enctype="multipart/form-data" action="/потвърждение-на-иск">
+            <input type="hidden" name="claimId"  value="@Model.ClaimId" />
+            <input type="hidden" name="SignitureImage" value="" />
+            <div class="form-hedar">
+                Подаване на иск
+            </div>
+          
+            <div class="form-row" id="AirCompany">
+                <div class="form-box left">
+                    <label>Номер на резервация или код за потвърждение <span class="requared">*</span></label>
+                    <div>
+                        <input type="text" id="BookCode" value="R4TY5E" name="BookCode" placeholder="Номер на резервация" validate /><i class="icon"></i>
+                    </div>
+                    <label class="sub-error">Грешен код</label>
+                </div>
+                <div class="form-box rigth">
+                    <label>Номер на билет <span class="requared">*</span></label>
+                    <div>
+                        <input type="text" id="TikedNumber" value="1-654321765432" name="TikedNumber" placeholder="Номер на билер" validate /><i class="icon"></i>
+                    </div>
+                    <label class="sub-error">Грешен номер на билет</label>
+                </div>
+
+            </div>
+
+            <div class="form-row" id="Info" style="flex-flow: column;">
+                <div class="form-box-width">
+                    <label>Допълнителна информация</label>
+                    <div>
+                        <textarea rows="6" cols="80" name="AdditionalInfo" placeholder=""></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-hedar">
+                Копия на необходими документи
+            </div>
+            <div class="form-row">
+                <div class="form-box-upload upload-box">
+                    <label>Моля изберете документ</label>
+                    <div>
+                        <button class="submit" onclick="uploadClick(this); return false;">Ибор на файл</button><i class="icon"></i>
+                        <input type="file" name="UserFiles" accept="image/*" multiple id="uBordCard" style="display:none" onchange="uploadChange(this)" />
+                        <label class="file-upload"> -- </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-subtext">
+                С подписването на настоящото <a href="/пълномощно/@Model.ClaimId" target="_blank">пълномощно </a> и <a>договор</a> се съгласявам с <a href="/общи-условия" target="_blank">общите условия</a>
+            </div>
+
+            <div class="form-subtext">
+                Моля подпишете <b> @Model.User.FirstName @Model.User.LastName </b>
+            </div>
+
+            <div class="form-row">
+                <div class="form-box-signiture">
+                    <label>Подпис</label>
+                    <div class="convas-holder">
+                        <div  id="signiture-div" width="500" height="300">
+                            </div>
+                        <canvas id="signiture" width="500" height="300"></canvas>
+                        <img name="signiture-img" style="display:none;">
+                    </div>
+                    <label class="sub-error">Подписа е твърде кратък</label>
+                    <div>
+                        <button class="clear" type="button" onclick="return clearSignature(this); return false;"><span>Изчисти</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row-yes-no" style="grid-template-columns: auto">
+                <label class="checkbox">
+                    <input type="radio" name="confirm">
+                    <span>Потвърждавам, че давам съгласието си AirHelp да обработи претенцията от мое име</span>
+                </label>
+            </div>
+            <div class="form-row">
+                <div class="form-box">
+                    <button class="submit" type="submit" keypress="alert(1); return false" onclick="return validateConfirmClaim()"><i class="icon"></i><span>Изпрати</span></button>
+                </div>
+                <div class="form-box">
+                    <button class="reset" type="reset" keypress="return false" onclick="clearForm()"><i class="icon"></i><span>Изчисти</span></button>
+                </div>
+            </div>
+            <div class="form-row">
+                &nbsp;
+            </div>
+        </form>
+    </div>
+
+   
+</div>
+
+
+<script src="~/Scripts/main.js"></script>
+<script src="~/Scripts/ConfirmClaim.js"></script>
+<script src="~/Scripts/Signiture.js"></script>
