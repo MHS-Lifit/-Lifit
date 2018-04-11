@@ -29,6 +29,8 @@ namespace Lifit.Controllers
     {
 
         //[Route("{item}/{category}")]
+        [Route("")]
+        [Route("home")]
         public ActionResult Index()
         {
             return View("Index");
