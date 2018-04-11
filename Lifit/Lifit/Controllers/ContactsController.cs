@@ -25,13 +25,10 @@ namespace Lifit.Controllers
 {
 
 
-    public class IndexController : BaseController
+    public class ContactsController : BaseController
     {
 
-        //[Route("{item}/{category}")]
-        [Route("")]
-        [Route("начало")]
-        [Route("home")]
+        [Route("Contacts")]
         public ActionResult Index()
         {
             return View("Index");
