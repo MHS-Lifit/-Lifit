@@ -10,26 +10,29 @@ using System.Threading.Tasks;
 
 namespace Lifit.DAL
 {
-    public class Article : EntityBase
+    public class Recip : EntityBase
     {
-        public Article()
+        public Recip()
         {
             
         }
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ArticleId { get; set; }
+        public int RecipId { get; set; }
 
         public string UserId { get; set; }
         [ForeignKey("UserId")]
         public virtual User User { get; set; }
-                
+            
+        
         public string Name { get; set; }
 
-        
+        public string PictureUrl { get; set; }
 
-        
+        public string Text { get; set; }
+
+        public int Visits { get; set; }
 
 
     }

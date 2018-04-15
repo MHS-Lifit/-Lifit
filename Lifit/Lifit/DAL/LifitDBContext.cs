@@ -14,7 +14,8 @@ namespace Lifit.DAL
 
         public DbSet<User> Users { get; set; }
         public DbSet<Article> Articles { get; set; }
-       
+        public DbSet<Recip> Recipes { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

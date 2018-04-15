@@ -32,7 +32,84 @@ namespace Lifit.Controllers
         [Route("Recipes")]
         public ActionResult Index()
         {
+            ViewBag.menu = "recipes";
             return View("Index");
+
+        }
+
+
+        [HttpGet]
+        [Route("добавяне-на-рецепта")]
+        public ActionResult RecipesAdd()
+        {
+
+            ViewBag.menu = "recipes";
+            return View("AddRecipes");
+
+        }
+
+
+        [HttpPost]
+        [Route("добавяне-на-рецепта")]
+        public ActionResult RecipesAddPost(IEnumerable<HttpPostedFileBase> UserFiles)
+        {
+            ViewBag.menu = "recipes";
+            using (LifitDBContext dc = new LifitDBContext())
+            {
+                var name = Request.Form["name"];
+                var text = Request.Form["text"];
+
+                var recip = new Recip()
+                {
+                    Name = name,
+                    Text = text
+                };
+
+                if (UserFiles != null)
+                {
+
+                    if (UserFiles != null && UserFiles.First().ContentLength > 0)
+                    {
+                        var file = UserFiles.First();
+                        var fname = Guid.NewGuid() + "." + file.FileName.Split('.')[1];
+                        file.SaveAs(Server.MapPath("~/files/picture/" + name));
+                        recip.PictureUrl = "/files/picture/" + name;
+                    }
+
+                    dc.SaveChanges();
+                }
+                                
+                var model = dc.Recipes.ToList();
+                return View("RecipesList", model);
+            }
+        }
+
+        [HttpGet]
+        [Route("рецепта/{id}")]
+        public ActionResult RecipDetail(int id)
+        {
+            ViewBag.menu = "recipes";
+            using (LifitDBContext dc = new LifitDBContext())
+            {
+                var model = dc.Recipes.Where(r => r.RecipId == id).SingleOrDefault();
+                model.Visits++;
+                dc.SaveChanges();
+
+                return View("ReceipDetail", model);
+            }
+        }
+
+        [Route("рецепти-списък")]
+        public ActionResult RecipesList()
+        {
+            using (LifitDBContext dc = new LifitDBContext())
+            {
+                var model = dc.Recipes.ToList();
+                return View("ReceipDetail", model);
+            }
+
+           
+
         }
 
     }

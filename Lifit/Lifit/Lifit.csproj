@@ -196,10 +196,15 @@
     <Compile Include="Controllers\IndexController.cs" />
     <Compile Include="DAL\Entities\Abstract\EntityBase.cs" />
     <Compile Include="DAL\Entities\Abstract\EntityID.cs" />
+    <Compile Include="DAL\Entities\Recip.cs" />
     <Compile Include="DAL\Entities\Article.cs" />
     <Compile Include="DAL\Entities\Users.cs" />
     <Compile Include="DAL\Initializers\DbInitializer.cs" />
     <Compile Include="Hellpers\CommonHeppler.cs" />
+    <Compile Include="Migrations\201804152009539_initial.cs" />
+    <Compile Include="Migrations\201804152009539_initial.Designer.cs">
+      <DependentUpon>201804152009539_initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -310,6 +315,9 @@
     <Content Include="Views\Articles\Index.cshtml" />
     <Content Include="Views\Contacts\Index.cshtml" />
     <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
+    <Content Include="Views\Recipes\RecipesList.cshtml" />
+    <Content Include="Views\Recipes\AddRecipes.cshtml" />
+    <Content Include="Views\Recipes\ReceipDetail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -329,6 +337,11 @@
     <Folder Include="App_Data\" />
     <Folder Include="Files\video\" />
     <Folder Include="Views\Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201804152009539_initial.resx">
+      <DependentUpon>201804152009539_initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

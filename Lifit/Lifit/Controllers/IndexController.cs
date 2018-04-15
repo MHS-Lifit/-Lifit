@@ -34,6 +34,7 @@ namespace Lifit.Controllers
         [Route("home")]
         public ActionResult Index()
         {
+            ViewBag.menu = "home";
             return View("Index");
         }
 

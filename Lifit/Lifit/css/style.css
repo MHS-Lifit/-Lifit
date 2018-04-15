@@ -27,13 +27,13 @@ img {
     background-color: #444;
 }
 
-    [name=menu] div {
-        float: left;
-        width: 20%;
-        height: 60px;
-        line-height: 60px;
-        background-color: #444;
-    }
+[name=menu] div {
+    float: left;
+    width: 20%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #444;
+}
 
 [name=menu] a {
     display: block;
@@ -46,7 +46,7 @@ img {
     font-size: 20px;
 }
 
-[name=menu] a:hover {
+[name=menu] a:hover, [name=menu] a.selected {
     background-color: #F4C2C2;
     color: black;
 }
@@ -62,19 +62,19 @@ img {
     padding-top: 30px;
 }
 
-.home h1 {
-    color: #660033;
-    font-size: 40px;
-    font-family: Verdana;
-    text-align: center;
-}
+    .home h1 {
+        color: #660033;
+        font-size: 40px;
+        font-family: Verdana;
+        text-align: center;
+    }
 
-.home p {
-    color: #99004C;
-    font-size: 20px;
-    font-family: Verdana;
-    text-align: center;
-}
+    .home p {
+        color: #99004C;
+        font-size: 20px;
+        font-family: Verdana;
+        text-align: center;
+    }
 
 .recipes div.gallery {
     margin: 5px;
@@ -83,14 +83,14 @@ img {
     width: 180px;
 }
 
-.recipes div.gallery:hover {
-    border: 1px solid #777;
-}
+    .recipes div.gallery:hover {
+        border: 1px solid #777;
+    }
 
-.recipes div.gallery img {
-    width: 100%;
-    height: auto;
-}
+    .recipes div.gallery img {
+        width: 100%;
+        height: auto;
+    }
 
 .recipes div.desc {
     padding: 15px;
@@ -102,4 +102,3 @@ img {
 .workouts video {
     margin: 30px;
 }
-

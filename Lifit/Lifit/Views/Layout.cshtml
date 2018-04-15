@@ -15,11 +15,11 @@
         <img src="~/Files/picture/di2.jpg">
     </div>
     <div name="menu" iframe >
-        <div><a href="home"> Home </a></div>
-        <div><a href="Recipes"> Recipes </a></div>
-        <div><a href="Workouts"> Workouts </a></div>
-        <div><a href="articles"> Articles </a></div>
-        <div><a href="contacts"> Contacts </a></div>
+        <div><a href="home" class='@(ViewBag.menu == "home" ? "selected" : "")'> Home </a></div>
+        <div><a href="Recipes" class='@(ViewBag.menu == "recipes" ? "selected" : "")'> Recipes </a></div>
+        <div><a href="Workouts" class='@(ViewBag.menu == "workout" ? "selected" : "")'> Workouts </a></div>
+        <div><a href="articles" class='@(ViewBag.menu == "article" ? "selected" : "")'> Articles </a></div>
+        <div><a href="contacts" class='@(ViewBag.menu == "contact" ? "selected" : "")'> Contacts </a></div>
     </div>
     <div name="contents">
         @RenderBody()

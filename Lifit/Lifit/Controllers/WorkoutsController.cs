@@ -31,6 +31,7 @@ namespace Lifit.Controllers
         [Route("Workouts")]
         public ActionResult Index()
         {
+            ViewBag.menu = "workout";
             return View("Index");
         }
 

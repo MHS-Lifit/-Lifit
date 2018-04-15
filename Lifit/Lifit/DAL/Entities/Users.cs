@@ -29,6 +29,8 @@ namespace Lifit.DAL
 
         public virtual ICollection<Article> Articles { get; set; }
 
+        public virtual ICollection<Recip> Recipes { get; set; }
+
         public string password { get; set; }
 
 
