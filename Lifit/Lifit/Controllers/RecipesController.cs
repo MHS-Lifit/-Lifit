@@ -78,7 +78,7 @@ namespace Lifit.Controllers
 
                     dc.SaveChanges();
                 }
-                                
+                dc.Recipes.Add(recip);
                 var model = dc.Recipes.ToList();
                 return View("RecipesList", model);
             }
@@ -105,7 +105,7 @@ namespace Lifit.Controllers
             using (LifitDBContext dc = new LifitDBContext())
             {
                 var model = dc.Recipes.ToList();
-                return View("ReceipDetail", model);
+                return View("RecipesList", model);
             }
 
            

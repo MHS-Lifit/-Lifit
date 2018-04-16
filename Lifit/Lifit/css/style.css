@@ -102,3 +102,24 @@ img {
 .workouts video {
     margin: 30px;
 }
+
+
+.recipes form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    font: 200 14px Arial; 
+}
+
+    .recipes form input, .recipes form textarea, .recipes form button {
+        width: 500px;
+        margin: 0 0 30px 0;
+        border: 3px solid gray;
+        border-radius: 3px;
+        padding: 4px;
+    }
+
+
+    .recipes form input, .recipes form button{
+        height: 40px;
+    }

@@ -205,6 +205,10 @@
     <Compile Include="Migrations\201804152009539_initial.Designer.cs">
       <DependentUpon>201804152009539_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804161630145_add-recipes.cs" />
+    <Compile Include="Migrations\201804161630145_add-recipes.Designer.cs">
+      <DependentUpon>201804161630145_add-recipes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -341,6 +345,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201804152009539_initial.resx">
       <DependentUpon>201804152009539_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804161630145_add-recipes.resx">
+      <DependentUpon>201804161630145_add-recipes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
