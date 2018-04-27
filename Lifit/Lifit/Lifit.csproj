@@ -230,6 +230,7 @@
     <Content Include="Files\picture\energybites.jpg" />
     <Content Include="Files\picture\header1024x300.jpg" />
     <Content Include="Files\picture\hedar708x200 px.jpg" />
+    <Content Include="Files\picture\images.png" />
     <Content Include="Files\picture\man.jpg" />
     <Content Include="Files\picture\muffin.jpg" />
     <Content Include="Files\picture\muffins.jpg" />

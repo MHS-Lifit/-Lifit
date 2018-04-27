@@ -17,7 +17,7 @@ div.logo {
 
 img {
     float: left;
-    width: 100%;
+    width: 100%; 
 }
 
 
@@ -27,29 +27,29 @@ img {
     background-color: #444;
 }
 
-[name=menu] div {
-    float: left;
-    width: 20%;
-    height: 60px;
-    line-height: 60px;
-    background-color: #444;
-}
+    [name=menu] div {
+        float: left;
+        width: 20%;
+        height: 60px;
+        line-height: 60px;
+        background-color: #444;
+    }
 
-[name=menu] a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
-    font-size: 20px;
-}
+    [name=menu] a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
 
-[name=menu] a:hover, [name=menu] a.selected {
-    background-color: #F4C2C2;
-    color: black;
-}
+        [name=menu] a:hover, [name=menu] a.selected {
+            background-color: #F4C2C2;
+            color: black;
+        }
 
 
 [name=contents] {
@@ -89,7 +89,7 @@ img {
 
     .recipes div.gallery img {
         width: 100%;
-        height: auto;
+        height: auto; 
     }
 
 .recipes div.desc {
@@ -104,22 +104,53 @@ img {
 }
 
 
+
+.recipes {
+    background-color: #F4C2C2;
+    height: 500px;
+}
+
 .recipes form {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    font: 200 14px Arial; 
+    font: 200 14px Arial;
 }
 
-    .recipes form input, .recipes form textarea, .recipes form button {
-        width: 500px;
-        margin: 0 0 30px 0;
-        border: 3px solid gray;
-        border-radius: 3px;
-        padding: 4px;
-    }
+.recipes form input[type=text], .recipes form textarea, .recipes form button {
+    width: 500px;
+    margin: 0 0 30px 0;
+    border: 3px solid gray;
+    border-radius: 3px;
+    padding: 4px 12px;
+}
+
+.recipes form input[type=file] {
+    width: 510px;
+    margin: 0 0 30px 0;
+    border: 3px solid gray;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.recipes textarea {
+    height: 100px
+}
+
+.recipes form input {
+    height: 40px;
+}
 
 
-    .recipes form input, .recipes form button{
-        height: 40px;
-    }
+.recipes form button {
+    width: 530px;
+    height: 40px;
+}
+
+.recipes form label {
+    margin: 0 0 10px 0;
+}
+
+
+
+

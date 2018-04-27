@@ -5,15 +5,15 @@
     @foreach (var recipe in Model)
     {
         <div class="gallery">
-            <a target="_blank" href="@recipe.PictureUrl">
-                <img src="@recipe.PictureUrl" alt="Smoothie" width="300" height="200">
+            <a  href="рецепта/@recipe.RecipId">
+                <img src="@recipe.PictureUrl" alt="Smoothie" width="300px" height="200px">
             </a>
-            <div class="desc">@recipe.Name</div>
+            <div class="desc">@recipe.Visits</div>
         </div>
     }   
     <div class="gallery">
-        <a target="_blank" href="/добавяне-на-рецепта">
-            Добави рецепта
+        <a  href="/добавяне-на-рецепта">
+              <img src="~/Files/picture/add.png" alt="Smoothie" width="300" height="200">
         </a>
     </div>
 </div>

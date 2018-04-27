@@ -71,14 +71,15 @@ namespace Lifit.Controllers
                     if (UserFiles != null && UserFiles.First().ContentLength > 0)
                     {
                         var file = UserFiles.First();
-                        var fname = Guid.NewGuid() + "." + file.FileName.Split('.')[1];
-                        file.SaveAs(Server.MapPath("~/files/picture/" + name));
-                        recip.PictureUrl = "/files/picture/" + name;
+                        var fname = file.FileName;
+                        file.SaveAs(Server.MapPath("~/files/picture/" + fname));
+                        recip.PictureUrl = "/files/picture/" + fname;
                     }
 
-                    dc.SaveChanges();
+                    
                 }
                 dc.Recipes.Add(recip);
+                dc.SaveChanges();
                 var model = dc.Recipes.ToList();
                 return View("RecipesList", model);
             }
