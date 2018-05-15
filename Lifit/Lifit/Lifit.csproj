@@ -319,10 +319,10 @@
     <Content Include="Views\Workouts\Index.cshtml" />
     <Content Include="Views\Articles\Index.cshtml" />
     <Content Include="Views\Contacts\Index.cshtml" />
-    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <Content Include="Views\Recipes\RecipesList.cshtml" />
     <Content Include="Views\Recipes\AddRecipes.cshtml" />
     <Content Include="Views\Recipes\ReceipDetail.cshtml" />
+    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
