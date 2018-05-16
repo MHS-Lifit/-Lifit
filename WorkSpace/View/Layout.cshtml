@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="~/Content/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="~/Content/jQuery/jquery-ui-1.12.1.min.js"></script>
+
+    <link href="~/css/style.css" rel="stylesheet" />
+
+</head>
+<body>
+    
+    <div class="logo">
+        <img src="~/Files/picture/di2.jpg">
+    </div>
+    <div name="menu" iframe >
+        <div><a href="home" class='@(ViewBag.menu == "home" ? "selected" : "")'> Home </a></div>
+        <div><a href="Recipes" class='@(ViewBag.menu == "recipes" ? "selected" : "")'> Recipes </a></div>
+        <div><a href="Workouts" class='@(ViewBag.menu == "workout" ? "selected" : "")'> Workouts </a></div>
+        <div><a href="articles" class='@(ViewBag.menu == "article" ? "selected" : "")'> Articles </a></div>
+        <div><a href="contacts" class='@(ViewBag.menu == "contact" ? "selected" : "")'> Contacts </a></div>
+    </div>
+    <div name="contents">
+        @RenderBody()
+    </div>
+    
+
+</body>
+</html>
+
