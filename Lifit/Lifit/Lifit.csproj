@@ -341,6 +341,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Files\video\" />
+    <Folder Include="Views\Common\" />
     <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
