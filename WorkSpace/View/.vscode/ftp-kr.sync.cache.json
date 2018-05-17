@@ -1,126 +1,15 @@
 {
-  "ftp://ftp-eu.site4now.net@help4fligth-001": {
+  "ftp://ftp-eu.site4now.net@Lifit": {
     "mmlifit": {
-      "_ViewStart.cshtml": {
-        "type": "-",
-        "size": 49,
-        "lmtime": 0,
-        "modified": false
-      },
-      "bin": {},
-      "Content": {},
-      "css": {},
-      "favicon.ico": {
-        "type": "-",
-        "size": 32038,
-        "lmtime": 0,
-        "modified": false
-      },
-      "Files": {},
-      "fonts": {},
-      "Global.asax": {
-        "type": "-",
-        "size": 97,
-        "lmtime": 0,
-        "modified": false
-      },
-      "packages.config": {
-        "type": "-",
-        "size": 3618,
-        "lmtime": 0,
-        "modified": false
-      },
       "Views": {
-        "_ViewStart.cshtml": {
-          "type": "-",
-          "size": 49,
-          "lmtime": 1526480381057,
-          "modified": false
-        },
         "Articles": {
           "Index.cshtml": {
             "type": "-",
-            "size": 163,
-            "lmtime": 1526480381794,
-            "modified": false
-          }
-        },
-        "Contacts": {
-          "Index.cshtml": {
-            "type": "-",
-            "size": 163,
-            "lmtime": 1526480382117,
-            "modified": false
-          }
-        },
-        "Index": {
-          "Index.cshtml": {
-            "type": "-",
-            "size": 163,
-            "lmtime": 1526480382372,
-            "modified": false
-          }
-        },
-        "Layout.cshtml": {
-          "type": "-",
-          "size": 1106,
-          "lmtime": 1526480381336,
-          "modified": false
-        },
-        "Login": {
-          "Login.cshtml": {
-            "type": "-",
-            "size": 22,
-            "lmtime": 1526480382728,
-            "modified": false
-          }
-        },
-        "Recipes": {
-          "AddRecipes.cshtml": {
-            "type": "-",
-            "size": 464,
-            "lmtime": 1526480517921,
-            "modified": false
-          },
-          "Index.cshtml": {
-            "type": "-",
-            "size": 1100,
-            "lmtime": 1526480758748,
-            "modified": false
-          },
-          "ReceipDetail.cshtml": {
-            "type": "-",
-            "size": 118,
-            "lmtime": 1526480383631,
-            "modified": false
-          },
-          "RecipesList.cshtml": {
-            "type": "-",
-            "size": 591,
-            "lmtime": 1526480383793,
-            "modified": false
-          }
-        },
-        "Web.config": {
-          "type": "-",
-          "size": 1926,
-          "lmtime": 1526480381498,
-          "modified": false
-        },
-        "Workouts": {
-          "Index.cshtml": {
-            "type": "-",
-            "size": 395,
-            "lmtime": 1526480384079,
+            "size": 165,
+            "lmtime": 1526568186115,
             "modified": false
           }
         }
-      },
-      "Web.config": {
-        "type": "-",
-        "size": 4412,
-        "lmtime": 0,
-        "modified": false
       }
     }
   },

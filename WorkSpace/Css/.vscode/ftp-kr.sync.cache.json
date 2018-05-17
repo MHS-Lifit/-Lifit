@@ -1,46 +1,9 @@
 {
-  "ftp://ftp-eu.site4now.net@help4fligth-001": {
-    "mmlifit": {
-      "_ViewStart.cshtml": {
+  "ftp://ftp-eu.site4now.net@Lifit": {
+    "css": {
+      "style.css": {
         "type": "-",
-        "size": 49,
-        "lmtime": 0,
-        "modified": false
-      },
-      "bin": {},
-      "Content": {},
-      "css": {
-        "style.css": {
-          "type": "-",
-          "size": 2575,
-          "lmtime": 1526479583639,
-          "modified": false
-        }
-      },
-      "favicon.ico": {
-        "type": "-",
-        "size": 32038,
-        "lmtime": 0,
-        "modified": false
-      },
-      "Files": {},
-      "fonts": {},
-      "Global.asax": {
-        "type": "-",
-        "size": 97,
-        "lmtime": 0,
-        "modified": false
-      },
-      "packages.config": {
-        "type": "-",
-        "size": 3618,
-        "lmtime": 0,
-        "modified": false
-      },
-      "Views": {},
-      "Web.config": {
-        "type": "-",
-        "size": 4412,
+        "size": 2575,
         "lmtime": 0,
         "modified": false
       }

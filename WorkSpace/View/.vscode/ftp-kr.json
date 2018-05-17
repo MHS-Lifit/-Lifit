@@ -1,8 +1,8 @@
 {
     "host": "ftp-eu.site4now.net",
-    "username": "help4fligth-001",
+    "username": "Lifit",
     "password": "Lifit2357",
-    "remotePath": "/mmlifit/Views",
+    "remotePath": "/Views",
     "protocol": "ftp",
     "port": 0,
     "fileNameEncoding": "utf8",
